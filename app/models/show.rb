@@ -11,7 +11,7 @@ end
    def self.least_popular_show
     self.where("rating = ?", 2).last
 end
-def ratings_sum
-  
+def self.ratings_sum
+  self.sum(:rating)
 end
 end
