@@ -8,5 +8,7 @@ end
  def self.lowest_rating
     self.minimum(:rating)
   end
-  
+   def self.least_popular_show
+    self.where("rating = ?", 0).last
+end
 end
