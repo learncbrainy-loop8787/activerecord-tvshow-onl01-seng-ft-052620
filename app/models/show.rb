@@ -12,6 +12,6 @@ end
     self.where("rating = ?", 2).last
 end
 def ratings_sum
-  < Show>.sum(:<rating>)
+  
 end
 end
