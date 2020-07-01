@@ -6,6 +6,6 @@ class Show < ActiveRecord::Base
     self.where("rating = ?", 10).first
 end
  def self.lowest_rating
-    self.minumum(:rating)
+    self.minimum(:rating)
   end
 end
