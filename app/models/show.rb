@@ -5,4 +5,5 @@ class Show < ActiveRecord::Base
   def self.most_popular_show
     self.where("rating = ?", 10).first
 end
+
 end
