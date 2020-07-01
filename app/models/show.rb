@@ -17,4 +17,5 @@ end
 def self.popular_shows
   self.where("rating > 5")
 end
+
 end
