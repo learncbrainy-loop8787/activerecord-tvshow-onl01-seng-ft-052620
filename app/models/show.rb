@@ -15,6 +15,6 @@ def self.ratings_sum
   self.sum(:rating)
 end
 def self.popular_shows
-  self
+  self.where("rating > ?, 5")
   
 end
