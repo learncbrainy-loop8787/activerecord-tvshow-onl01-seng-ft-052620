@@ -18,6 +18,6 @@ def self.popular_shows
   self.where("rating > 5")
 end
 def self.shows_by_alphabetical_order
-  self.order
+  self.order(:name)
 end
 end
